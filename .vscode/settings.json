@@ -1,0 +1,28 @@
+{
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+    ],
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+        "./src"
+    ],
+    "files.autoSave": "onFocusChange",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#353535"
+    },
+    "discord.enabled": true,
+    "editor.bracketPairColorization.enabled": true,
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "typescript.implementationsCodeLens.enabled": true,
+    "mochaExplorer.files": "test/**/*.ts",
+}
