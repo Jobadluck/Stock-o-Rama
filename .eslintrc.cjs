@@ -3,12 +3,12 @@ module.exports = {
   root: true,
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint',
     'plugin:svelte/recommended',
     'prettier'
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'no-only-tests'],
+  plugins: ['prettier', '@typescript-eslint', 'no-only-tests'],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,
@@ -21,7 +21,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.svelte'],
+      files: ['*.svelte', '*.ts', '*.js'],
       parser: 'svelte-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser'
@@ -44,6 +44,7 @@ module.exports = {
     'no-only-tests/no-only-tests': 'error',
     'no-trailing-spaces': 'error',
     "eol-last": "off",
+    "prettier/prettier": "error",
     'space-before-function-paren': [
       'error',
       { anonymous: 'always', named: 'never', asyncArrow: 'always' }
