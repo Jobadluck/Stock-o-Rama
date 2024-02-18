@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let data
-	const { callNbr } = { callNbr: data.callNbr }
+	export let data;
+	const { callNbr } = { callNbr: data.callNbr };
 </script>
 
 <h1>Welcome to Stock-o-Rama</h1>

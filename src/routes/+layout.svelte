@@ -20,9 +20,9 @@
 			<div class="navbar-nav">
 				<a
 					class="nav-link"
-					class:active={$page.url.pathname === '/view1'}
+					class:active={$page.url.pathname === '/article'}
 					aria-current="page"
-					href="/view1">Home</a
+					href="/article">Articles</a
 				>
 				<a class="nav-link" class:active={$page.url.pathname === '/view2'} href="/view2">Features</a
 				>
