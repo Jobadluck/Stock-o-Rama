@@ -44,6 +44,7 @@
 		"@vercel/postgres": "^0.7.2",
 		"@vercel/postgres-kysely": "^0.7.2",
 		"headlessui": "^0.0.0",
-		"kysely": "^0.27.2"
+		"kysely": "^0.27.2",
+		"svelte-loading-spinners": "^0.3.4"
 	}
 }
