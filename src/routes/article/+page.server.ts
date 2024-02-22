@@ -1,6 +1,7 @@
 import { db } from '$lib/server/db'
+import type { Article } from '$lib/server/db/schema'
 
 export const load = async () => {
-	const article = await db.selectFrom('article').selectAll().execute()
-	return { article: JSON.stringify(article) }
+	const articles: Article[] = await db.selectFrom('article').selectAll().execute()
+	return { articles, isLoading: false }
 }
