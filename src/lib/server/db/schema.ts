@@ -1,5 +1,3 @@
-import type { Generated } from 'kysely'
-
 /**
  * Schema for article table
  */
@@ -11,7 +9,7 @@ export interface Article {
 }
 
 export interface Mouvement {
-	id: Generated<number>
+	id: number
 	code_article: number
 	date: Date
 	date_fin: Date
@@ -23,7 +21,7 @@ export interface Mouvement {
  * Schema for fournisseur table
  */
 export interface Fournisseur {
-	id: Generated<number>
+	id: number
 	nom: string
 	description: string
 	adresse: string

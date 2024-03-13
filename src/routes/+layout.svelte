@@ -19,14 +19,11 @@
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
 				<a
-					class="nav-link"
-					class:active={$page.url.pathname === '/article'}
-					aria-current="page"
-					href="/article">Articles</a
+					class="nav-link" class:active={$page.url.pathname === '/data'} aria-current="page" href="/data">Données</a>
+				<a class="nav-link" class:active={$page.url.pathname === '/todo'} href="/todo">Todos</a
 				>
-				<a class="nav-link" class:active={$page.url.pathname === '/view2'} href="/view2">Features</a
-				>
-				<a class="nav-link" class:active={$page.url.pathname === '/view3'} href="/view3">Pricing</a>
+				<!-- 
+				<a class="nav-link" class:active={$page.url.pathname === '/view3'} href="/view3">Pricing</a> -->
 				<!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
 			</div>
 		</div>
